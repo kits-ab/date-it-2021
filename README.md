@@ -5,7 +5,6 @@ Den här gången består utmaningen av att kombinera två st cvs-filer kommun.cs
 
 En godkänd kombination ska inkludera Kod, Kommun, Skolenhetsnamn, Grund-skola, Förskole-klass, Fritids-hem
 
-Exempel
-0114;Upplands Väsby;Odenskolan;Ja;Ja;Ja
+Exempel:  0114;Upplands Väsby;Odenskolan;Ja;Ja;Ja
 
 Den snabbaste och elegantaste lösning skriven i Java kommer att utses som vinnare.
