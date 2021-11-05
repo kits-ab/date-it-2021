@@ -8,3 +8,5 @@ En godkänd kombination ska inkludera Kod, Kommun, Skolenhetsnamn, Grund-skola, 
 Exempel:  0114;Upplands Väsby;Odenskolan;Ja;Ja;Ja
 
 En jury på Kits utser en vinnare med den snabbaste och elegantaste lösning skriven i Java.
+
+Skapa en folder och ladda upp er lösning.
