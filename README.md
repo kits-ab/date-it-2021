@@ -7,7 +7,8 @@ En godkänd kombination ska inkludera Kod, Kommun, Skolenhetsnamn, Grund-skola, 
 
 Exempel:  0114;Upplands Väsby;Odenskolan;Ja;Ja;Ja
 
-En jury på Kits utser 3 st vinnare med den snabbaste och elegantaste lösning skriven i Java/C#/Python/JavaScript
+En jury på Kits utser 3 st vinnare med en fungerande lösning skriven i Java/C#/Python/JavaScript
+Vi kommer att förutom funktion att titta extra noggrannt på snabbhet och elegans.
 
 Skapa en folder och ladda upp er lösning.
 Glöm inte att inkludera mailadress och mobnummer så att vi kan dig.
