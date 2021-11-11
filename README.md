@@ -1,14 +1,29 @@
-# date-it-2021
-Välkommen till Kits DatE-IT 2021 utmaning!
+Solution for date-it-2021 written in Python (.ipynb notebook) with use of pandas
+7 lines of code, not counting comments, imports and new lines (to make it look pretty c:)
 
-Den här gången består utmaningen av att kombinera två st cvs-filer kommun.csv och skolverksamhet.csv till en ny csv-fil där vi söker samtliga skolor med grund-skola, för-skola och fritids-hem.
+Name:    Nils Trubkin
+Github:  https://github.com/nils-trubkin
+Website: https://nils.tk
+E-mail:  nils.trubkin@gmail.com
+Phone:   070-279-53-86
 
-En godkänd kombination ska inkludera Kod, Kommun, Skolenhetsnamn, Grund-skola, Förskole-klass, Fritids-hem
+Here is a brief overview of the code inside the notebook.ipynb
 
-Exempel:  0114;Upplands Väsby;Odenskolan;Ja;Ja;Ja
+import pandas as pd
+# Load the .csv files
+dk = pd.read_csv('kommuner.csv', sep=';')
+ds = pd.read_csv('skolverksamhet.csv', sep=';')
 
-En jury på Kits utser 3 st vinnare med en fungerande lösning skriven i Java/C#/Python/JavaScript
-Vi kommer att förutom funktion att titta extra noggrannt på snabbhet och elegans.
+# Merge the DataFrames
+m = pd.merge(dk, ds, on="Kod")
+# Filter and copy
+res = m[(m["Grund-skola"] == "Ja") &
+        (m["Förskole-klass"] == "Ja") &
+        (m["Fritids-hem"] == "Ja")].copy()
 
-Skapa en folder och ladda upp er lösning.
-Glöm inte att inkludera mailadress och mobnummer så att vi kan dig.
+# Pad with zeros to a 4-digit number on 'Kod'
+res['Kod'] = res['Kod'].astype(str).str.pad(4,fillchar='0').copy()
+# Set index to avoid automatically generated ids
+res = res.set_index('Kod')
+# Save result to file
+res.to_csv('result.csv', sep=';')
