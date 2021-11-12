@@ -12,3 +12,5 @@ Vi kommer att förutom funktion att titta extra noggrannt på snabbhet och elega
 
 Skapa en folder och ladda upp er lösning.
 Glöm inte att inkludera mailadress och mobnummer så att vi kan dig.
+
+Vi accepterar bidrag fram till 17/11 midnatt. 
